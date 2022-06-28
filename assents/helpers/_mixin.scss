@@ -1,0 +1,15 @@
+@mixin font ($weigh, $size, $color) {
+    font-weight: $weigh;
+    font-size: $size;
+    color: $color;
+}
+@mixin box ($width, $heigth, $bg) {
+    width: $width;
+    height: $heigth;
+    background: $bg;
+}
+@mixin max-box ($width, $heigth, $bg) {
+    max-width: $width;
+    max-height: $heigth;
+    background: $bg;
+}
