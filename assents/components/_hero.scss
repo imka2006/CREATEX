@@ -1,0 +1,61 @@
+.hero {
+    background: url(../assents/img/hero/bg.png) center no-repeat;
+    background-size: cover;
+    padding: 220px 0 120px;
+    &__title {
+        @include font (700, 72px, $white);
+        margin-bottom: 24px;
+    }
+    &__nick {
+        color: $primary;
+    }
+    &__description {
+        @include font (400, 20px, $white);
+        max-width: 595px;
+    }
+    &__btns {
+        margin-top: 61px;
+    }
+    &__content {
+        padding-bottom: 30px;
+    }
+    &__first--btn,
+    &__second--btn {
+      padding: 20px 40px;
+      @include font (700, 16px, $white);
+      background: $primary;
+      border-radius: 4px;
+      &:hover {
+        border: 1px solid $white;
+        background-color: rgba(0,0,0,0);
+        padding: 19px 39px;
+    }
+    }
+    &__first--btn {
+        margin-right: 12px;
+       
+    }
+    &__second--btn {
+        margin-left: 12px;
+    }
+
+    &__next--button {
+        right: -265px;
+    }
+    &__prev--button {
+        left: -265px;
+    }
+    &__next--button,
+    &__prev--button {
+        top: 49%;
+        bottom: 49%;
+        z-index: 2;
+    }
+    &__inner {
+        position: relative;
+    }
+    &__swiper__second {
+        margin-top: 170px;
+
+    }
+}

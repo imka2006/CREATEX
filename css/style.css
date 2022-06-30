@@ -4,7 +4,7 @@ body {
   font-family: 'Ubuntu';
 }
 
-h1, h2, h3, h4, h5, h6, ul {
+h1, h2, h3, h4, h5, h6, ul, p {
   margin: 0;
   padding: 0;
 }
@@ -19,13 +19,6 @@ li, a {
   list-style: none;
   color: initial;
   z-index: -999;
-}
-
-@media screen and (max-width: 1250px) {
-  .container {
-    max-width: 1170px;
-    padding: 0 30px;
-  }
 }
 
 .center {
@@ -50,6 +43,23 @@ li, a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.button--next,
+.button--prev {
+  width: 48px;
+  height: 48px;
+  background: #ffff;
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.5;
+}
+
+.button--next:hover,
+.button--prev:hover {
+  opacity: unset;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 .header {
@@ -265,7 +275,87 @@ li, a {
 }
 
 .hero {
-  margin-top: 1000px;
+  background: url(../assents/img/hero/bg.png) center no-repeat;
+  background-size: cover;
+  padding: 220px 0 120px;
+}
+
+.hero__title {
+  font-weight: 700;
+  font-size: 72px;
+  color: #ffff;
+  margin-bottom: 24px;
+}
+
+.hero__nick {
+  color: #FF5A30;
+}
+
+.hero__description {
+  font-weight: 400;
+  font-size: 20px;
+  color: #ffff;
+  max-width: 595px;
+}
+
+.hero__btns {
+  margin-top: 61px;
+}
+
+.hero__content {
+  padding-bottom: 30px;
+}
+
+.hero__first--btn, .hero__second--btn {
+  padding: 20px 40px;
+  font-weight: 700;
+  font-size: 16px;
+  color: #ffff;
+  background: #FF5A30;
+  border-radius: 4px;
+}
+
+.hero__first--btn:hover, .hero__second--btn:hover {
+  border: 1px solid #ffff;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 19px 39px;
+}
+
+.hero__first--btn {
+  margin-right: 12px;
+}
+
+.hero__second--btn {
+  margin-left: 12px;
+}
+
+.hero__next--button {
+  right: -265px;
+}
+
+.hero__prev--button {
+  left: -265px;
+}
+
+.hero__next--button, .hero__prev--button {
+  top: 49%;
+  bottom: 49%;
+  z-index: 2;
+}
+
+.hero__inner {
+  position: relative;
+}
+
+.hero__swiper__second {
+  margin-top: 170px;
+}
+
+@media screen and (max-width: 1250px) {
+  .container {
+    max-width: 1170px;
+    padding: 0 30px;
+  }
 }
 
 @media screen and (max-width: 1231px) {
