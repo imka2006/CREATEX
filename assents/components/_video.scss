@@ -1,0 +1,51 @@
+.video {
+    padding: 120px 0 180px;
+    &__content {
+        text-align: center;
+    }
+    &__title {
+        @include font (700, 46px, $grayblack);
+    }
+    &__description {
+        @include font (400, 18px, $litegray);
+        margin: 24px 0 60px
+    }
+    &__display {
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+
+@media screen and (max-width:920px) {
+    .video {
+        &__display {
+            max-height: 350px;
+        }
+        &__title {
+            font-weight: 500;
+            font-size: 34px;
+        }
+        &__
+    }
+}
+@media screen and (max-width:635px) {
+    .video {
+        &__display {
+            max-height: 250px;
+        }
+    }
+}
+@media screen and (max-width:500px) {
+    .video {
+        &__display {
+            max-height: 200px;
+        }
+    }
+}
+@media screen and (max-width:400px) {
+    .video {
+        &__display {
+            max-height: 140px;
+        }
+    }
+}
