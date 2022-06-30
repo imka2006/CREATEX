@@ -20,8 +20,3 @@
     flex-wrap: $wrap;
     
 }
-@mixin font($wight, $size, $color) {
-    font-weight: $wight ;
-    font-size: $size;
-    color: $color;
-}
