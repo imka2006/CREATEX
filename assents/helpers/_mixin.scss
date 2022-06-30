@@ -1,7 +1,7 @@
-@mixin font ($weigh, $size, $color) {
+@mixin font ($weigh, $size, $lol) {
     font-weight: $weigh;
     font-size: $size;
-    color: $color;
+    color: $lol;
 }
 @mixin box ($width, $heigth, $bg) {
     width: $width;

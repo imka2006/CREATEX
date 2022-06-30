@@ -1,0 +1,226 @@
+.header {
+    padding: 20px 0;
+    // background: green;
+    &__logo {
+        @include font (700, 28px, $grayblack);
+        z-index: 2;
+    }
+    &__nav {
+        display: flex;
+        z-index: 2;
+    }
+    &__link {
+        margin: 0 20px;
+        @include font (700, 16px, $normgray);
+        &:hover {
+            color: $primary;
+            transition: .3s;
+        }
+    }
+    &__icon {
+        margin-left: 4px;
+    }
+    &__info,
+    &__call,
+    &__chat {
+        display: flex;
+    }
+    &__chat {
+            margin-left: 36px;
+    }
+    &__subtitle {
+        @include font (700, 14px, $normgray);
+    }
+    &__mail,
+    &__num {
+        @include font (400, 18px, $grayblack);
+        display: block;
+    }
+    &__mobile,
+    &__massage {
+        margin-left: 12px;
+    }
+}
+
+.burger {
+    display: none;
+    position: relative;
+    &__line {
+        position: absolute;
+        
+    }
+    &__delete {
+        position: absolute;
+        top:-23px;
+        right: -30px;
+        width: 100vw;
+        height: 100vh;
+        opacity: 0.8;
+        background:rgba(0, 0, 0, 0.5);
+        display: none;
+        z-index: 1;
+    }
+    &__list {
+        display: none;
+        position: absolute;
+        right: -30px;
+        top: -25px;
+        transition: 1s;
+        width:300px;
+        height: 100vh;
+        background: black;
+        transition: 999ms;
+        border-top-left-radius: 20px;
+        z-index: 3;
+    }
+    &__nav {
+        display: none;
+    }
+
+    &__call,
+    &__chat {
+        display: flex;
+    }
+    &__subtitle {
+        @include font (500, 14px, $white);
+    }
+    &__mail,
+    &__num {
+        @include font (200, 18px, $white);
+        display: block;
+    }
+  
+    &__call,
+    &__chat {
+        margin: 30px 0;
+    }
+    &__link {
+        @include font (700, 16px, $white);
+        &:hover {
+            color: $primary;
+            transition: .3s;
+        }
+    }
+    &__item {
+        margin: 20px 0;
+    }
+    &__mobile,
+    &__massage {
+        margin-left: 12px;
+    }
+    &__close {
+        display: none;
+        z-index: 5;
+    }
+    &__menu {
+        @include box (30px ,18px, rgba(0, 0, 0, -1));
+        position: relative;
+        justify-content: flex-end;
+        cursor: pointer;
+        .a {
+            @include box (14px, 2px, $black);
+            top: 0px;
+        }
+        .b {
+            @include box (100%, 2px, $black);
+        }
+        .c {
+            @include box (22px, 2px, $black);
+            bottom: 0px;
+        }
+        &.active .burger__line {
+            display: none;
+        }
+
+        &.active .burger__close {
+            display: block;
+            transform: rotate(45deg);
+            transition: 1s;
+        }
+        &.active ~ .burger__list  {
+            display: block;
+        }
+        &.active ~ .burger__delete  {
+            right: -30px;
+            display: block;
+        }
+        &.active ~ .burger__delete  {
+            right: -30px;
+            display: block;
+        }
+        &.active ~ body  {
+            overflow: hidden;
+        }
+    }
+}
+.hero {
+    margin-top: 1000px;
+}
+@media screen and (max-width:1231px) {
+    .burger {
+         display: block;
+         &__info {
+            margin-left: 30px;
+         }
+    }
+    .header {
+        padding: 15px 0;
+        &__info {
+            display: none;
+        }
+    }
+}
+@media screen and (max-width:780px) {
+    .header {
+        &__nav {
+            display: none;
+            
+        }
+    }
+    .burger {
+        &__nav {
+            display: block;
+            margin-top: 80px;
+        }
+        &__call,
+        &__chat {
+            display:block;
+        }
+        &__list {
+            flex-direction: column;
+            text-align: center;
+            width: 200px;
+        }
+        &__img {
+            display: none;
+        }
+        &__mobile,
+        &__massage {
+            margin:0 auto;
+        }
+        &__link {
+            font-weight: 500;
+            font-size: 14px;
+        }
+        &__mail, 
+        &__num {
+            font-weight: 200;
+            font-size: 14px;
+        }
+        &__info {
+            margin: 0;
+        }
+    }
+   
+}
+@media screen and (max-width:500px) {
+    .burger {
+        &__list {
+            width: 120px;
+        }
+        &__num,
+        &__mail {
+            font-size: 10px;
+        }
+    }
+}

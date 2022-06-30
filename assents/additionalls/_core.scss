@@ -1,12 +1,25 @@
-body,h1,h2,h3,h4,h5,h6,ul {
+body {
+    margin: 0;
+    font-family: 'Ubuntu';
+}
+h1,h2,h3,h4,h5,h6,ul {
     margin: 0;
     padding: 0;
 }
 .container {
-    width: 1230px;
+    max-width: 1230px;
     margin: 0 auto;
 }
 li, a {
     text-decoration: none;
     list-style: none;
+    color: initial;
+    z-index: -999;
+}
+
+@media screen and (max-width:1250px) {
+    .container {
+        max-width: 1170px;
+        padding: 0 30px;
+    }
 }
