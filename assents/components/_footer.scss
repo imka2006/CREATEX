@@ -1,22 +1,27 @@
 .footer {
     padding: 80px 0;
     background: $grayblack;
+
     &__content {
         display: flex;
         align-items: center;
     }
+
     &__logo {
         @include font (700, 28px, $white);
         margin-right: 52px;
         z-index: 1;
         margin: 0 4px;
     }
-    &__none  {
+
+    &__none {
         margin: 0 4px;
     }
+
     &__social--link {
         margin: 0 8px;
     }
+
     &__description {
         max-width: 493px;
         @include font (400, 14px, $white);
@@ -24,15 +29,18 @@
         opacity: 0.6;
         margin-top: 24px;
     }
+
     &__title {
         @include font (700, 24px, $white);
-        margin-bottom: 24px;    
+        margin-bottom: 24px;
     }
+
     &__block {
         display: none;
     }
+
     &__input {
-        padding: 12px 228px 12px 16px;   
+        padding: 12px 228px 12px 16px;
         background: rgba(255, 255, 255, 0.12);
         border: 1px solid rgba(255, 255, 255, 0.2);
         border-radius: 4px 0px 0px 4px;
@@ -40,6 +48,7 @@
         border: none;
         outline: none;
     }
+
     &__btn {
         padding: 12px 25px;
         background: $primary;
@@ -47,151 +56,64 @@
         border-radius: 0px 4px 4px 0px;
         margin-left: -5px;
     }
+
     &__text {
         @include font (400, 12px, $white);
         opacity: 0.6;
         max-width: 495px;
         margin-top: 16px;
     }
+
     &__middle {
         display: flex;
         align-items: center;
         margin-top: 73px;
     }
+
     &__over {
         margin-right: 125px;
     }
+
     &__subtitle {
         @include font (700, 16px, $white);
         margin-bottom: 13px;
     }
+
     &__link {
         @include font (400, 16px, $white);
         opacity: 0.6;
     }
+
     &__item {
         margin-bottom: 13px;
-        @include font (400, 16px, $white);    
+        @include font (400, 16px, $white);
     }
+
     &__bottom {
         margin-top: 60px;
         @include font (400, 12px, $white)
     }
+
     &__up {
         display: flex;
         align-items: flex-end;
     }
+
     &__inscription {
         @include font (400, 14px, $white);
         margin-right: 16px;
         cursor: pointer;
     }
+
     &__box {
         @include box (40px, 40px, $primary);
         border-radius: 4px;
         cursor: pointer;
     }
+
     &__righta {
         display: flex;
         align-items: center;
         @include font (400, 12px, $white);
-    }
-}
-@media screen and (max-width:1090px) {
-    .footer {
-        &__top {
-            flex-wrap: wrap;
-        }
-        &__title {
-            margin-top: 15px;
-        }
-    }
-}
-@media screen and (max-width:1060px) {
-    .footer {
-       &__middle {
-        flex-wrap: wrap;
-        margin-top: 33px;
-
-       }
-       &__subtitle {
-        margin-top: 30px;
-       }
-       &__up {
-        align-items: center;
-       }
-    }
-}
-@media screen and (max-width:600px) {
-    .footer {
-        padding: 60px 0;
-      &__input {
-        padding-right: 50px;
-      }
-      &__text,
-      &__description {
-        max-width: 340px;
-      }
-      &__bottom {
-        flex-wrap: wrap-reverse;
-      }
-      &__righta {
-        margin-right: 130px;
-        margin-top: 30px;
-     }
-    }
-}
-@media screen and (max-width:491px) {
-    .footer {
-      &__content {
-        flex-wrap: wrap;
-      }
-      &__links {
-        display: flex;
-        // margin-top: 20px;
-      }
-      &__link {
-        margin-right: 12px;
-      }
-    &__none {
-        display: none;
-    }   
-    }
-}
-@media screen and (max-width:420px) {
-    .footer {
-        text-align: center;
-        &__inner {
-            flex-wrap: wrap;
-        }
-        &__btn {
-            padding: 10px 15px;
-            border-radius: 4px;
-            margin:20px auto 0;
-        }
-        &__input {
-            padding: 10px 40px 10px;
-            border-radius: 4px;
-        }
-        &__over {
-            margin: 0 auto;
-           width: 400px;
-        }
-        &__righta {
-            margin: 20px auto 0;
-        }
-        &__up {
-            margin: 0 auto;
-        }
-        &__links {
-            margin: 20px auto;
-        }
-    }
-}
-@media screen and (max-width:404px) {
-    .footer {
-       &__logo {
-        margin: 0 auto;
-       }
     }
 }
