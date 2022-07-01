@@ -188,3 +188,10 @@
         }
     }
 }
+@media screen and (max-width:404px) {
+    .footer {
+       &__logo {
+        margin: 0 auto;
+       }
+    }
+}

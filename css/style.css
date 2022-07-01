@@ -141,7 +141,7 @@ button {
   top: -23px;
   right: -30px;
   width: 100vw;
-  height: 100vh;
+  height: 101vh;
   opacity: 0.8;
   background: rgba(0, 0, 0, 0.5);
   display: none;
@@ -156,7 +156,7 @@ button {
   -webkit-transition: 1s;
   transition: 1s;
   width: 300px;
-  height: 100vh;
+  height: 101vh;
   background: black;
   -webkit-transition: 999ms;
   transition: 999ms;
@@ -214,6 +214,7 @@ button {
 .burger__close {
   display: none;
   z-index: 5;
+  margin-right: 15px;
 }
 
 .burger__menu {
@@ -661,6 +662,12 @@ button {
   }
   .footer__links {
     margin: 20px auto;
+  }
+}
+
+@media screen and (max-width: 404px) {
+  .footer__logo {
+    margin: 0 auto;
   }
 }
 
