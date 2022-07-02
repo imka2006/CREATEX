@@ -3,6 +3,7 @@ const body = document.querySelector("body")
 const burger__delete = document.querySelector(".burger__delete")
 const box = document.querySelector(".footer__box")
 const text = document.querySelector(".footer__inscription")
+const discuss__checkbox = document.querySelector(".discuss__checkbox__wrapper")
 
 
 burger__menu.addEventListener("click", () => {
@@ -42,6 +43,10 @@ const hero__swiper = new Swiper(".hero__swiper", {
     spaceBetween: 0,
   });
 
+  discuss__checkbox.addEventListener("click", () => {
+    discuss__checkbox.classList.toggle("befor__after")
+  })
+
 box.addEventListener("click", () => {
   window.scrollTo({
     top:0,
@@ -54,3 +59,5 @@ text.addEventListener("click", () => {
     behavior:'smooth'
   });
 });
+
+
