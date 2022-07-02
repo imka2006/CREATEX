@@ -450,6 +450,132 @@ button {
   color: white;
 }
 
+.construction .width {
+  max-width: 100%;
+}
+.construction__all {
+  display: flex;
+  margin-top: 120px;
+}
+.construction__fet {
+  margin-top: 60px;
+  margin-left: 80px;
+}
+.construction__one {
+  font-weight: 700;
+  font-size: 32px;
+}
+.construction__titp {
+  font-weight: 400;
+  font-size: 16px;
+  max-width: 500px;
+  color: #787A80;
+}
+.construction__aboass {
+  margin-top: 25px;
+}
+.construction__more {
+  font-weight: 700;
+  font-size: 14px;
+  color: #ffffff;
+  padding: 20px 50px;
+  border: 2px solid #FF5A30;
+  border-radius: 7px;
+  background: #FF5A30;
+  cursor: pointer;
+  margin-top: 48px;
+}
+.construction__services {
+  margin-top: 400px;
+}
+.construction__more:hover {
+  background: rgba(250, 248, 247, 0);
+  transition: 0.7s;
+  color: #FF5A30;
+}
+.construction__development {
+  display: flex;
+  margin-top: 120px;
+}
+.construction__jpg {
+  margin-left: 160px;
+}
+.construction__boot {
+  margin-top: 109px;
+}
+.construction__inter {
+  margin-top: 120px;
+}
+.construction__aboass {
+  color: #787A80;
+  max-width: 500px;
+}
+.construction__fone {
+  background-image: url("../../assents/img/construction/eva_alfa.png");
+  background-size: cover;
+  max-width: 100%;
+  height: 500px;
+}
+.construction__servis {
+  margin-top: 40px;
+  font-weight: 700;
+  font-size: 72px;
+}
+.construction__full {
+  margin-top: 96px;
+}
+.construction__png {
+  max-width: 100%;
+}
+
+@media screen and (max-width: 1385px) {
+  .construction__jpg {
+    margin-left: 100px;
+  }
+}
+@media screen and (max-width: 1250px) {
+  .container {
+    max-width: 1170px;
+    padding: 0 30px;
+  }
+}
+@media screen and (max-width: 1208px) {
+  .construction__jpg {
+    margin-left: 30px;
+  }
+}
+@media screen and (max-width: 1130px) {
+  .construction__jpg {
+    margin-left: 10px;
+  }
+}
+@media screen and (max-width: 1010px) {
+  .construction__all {
+    flex-direction: column;
+    padding: 0;
+    border: 3px solid #FF5A30;
+    border-radius: 6px;
+    padding: 30px 40px;
+    max-width: 100%;
+  }
+  .construction__jpg {
+    margin-left: 2px;
+    margin-top: 20px;
+  }
+  .construction__development {
+    display: flex;
+    flex-direction: column-reverse;
+    border: 3px solid #FF5A30;
+    border-radius: 4px;
+    padding: 20px 60px;
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .construction__one {
+    font-weight: 700;
+  }
+}
 @media screen and (max-width: 1250px) {
   .container {
     max-width: 1170px;
