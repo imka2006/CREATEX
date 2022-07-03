@@ -443,6 +443,197 @@ input {
   }
 }
 
+.recent {
+  margin-bottom: 900px;
+}
+
+.recent__title {
+  font-weight: 700;
+  font-size: 46px;
+  color: #1E212C;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.recent__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.recent__wrapper {
+  -webkit-box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.16), 0px 30px 24px -10px rgba(154, 156, 165, 0.1), 0px 12px 10px -6px rgba(154, 156, 165, 0.08), 0px 4px 4px -4px rgba(30, 33, 44, 0.05);
+          box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.16), 0px 30px 24px -10px rgba(154, 156, 165, 0.1), 0px 12px 10px -6px rgba(154, 156, 165, 0.08), 0px 4px 4px -4px rgba(30, 33, 44, 0.05);
+  border-radius: 4px;
+  width: 495px;
+}
+
+.recent__wrapper--another {
+  -webkit-box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.16), 0px 30px 24px -10px rgba(154, 156, 165, 0.1), 0px 12px 10px -6px rgba(154, 156, 165, 0.08), 0px 4px 4px -4px rgba(30, 33, 44, 0.05);
+          box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.16), 0px 30px 24px -10px rgba(154, 156, 165, 0.1), 0px 12px 10px -6px rgba(154, 156, 165, 0.08), 0px 4px 4px -4px rgba(30, 33, 44, 0.05);
+  border-radius: 4px;
+  width: 705px;
+}
+
+.recent__cool {
+  margin-bottom: 20px;
+}
+
+.recent__inner {
+  padding: 24px 16px 24px 24px;
+}
+
+.recent__info {
+  padding: 24px;
+}
+
+.recent__subtitle {
+  font-weight: 700;
+  font-size: 20px;
+  color: #1E212C;
+}
+
+.recent__subtitle:hover {
+  color: #FF5A30;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.recent__news {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin-top: 8px;
+}
+
+.recent__new {
+  font-weight: 400;
+  font-size: 14px;
+  color: #787A80;
+}
+
+.recent__new--another {
+  font-weight: 400;
+  font-size: 14px;
+  color: #787A80;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.recent__vertical--line {
+  width: 1px;
+  height: 12px;
+  background: #787A80;
+  margin: 0px 12px;
+}
+
+.recent__another {
+  margin: 12px 0 16px;
+}
+
+.recent__description {
+  font-weight: 400;
+  font-size: 16px;
+  color: #424551;
+  max-width: 657px;
+  line-height: 26px;
+}
+
+@media screen and (max-width: 1250px) {
+  .recent__content {
+    -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .recent__wrapper--another {
+    margin-bottom: 30px;
+  }
+  .recent__wrapper {
+    width: 705px;
+  }
+  .recent__img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .recent__content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .recent__wrapper--another {
+    margin-bottom: 30px;
+  }
+  .recent__wrapper {
+    width: 705px;
+    margin-bottom: 30px;
+  }
+  .recent__img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 745px) {
+  .recent__content {
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+    display: unset;
+  }
+  .recent__wrapper {
+    width: 100%;
+  }
+  .recent__wrapper--another {
+    width: 100%;
+  }
+  .recent__img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .recent__news {
+    display: unset;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .recent__vertical--line {
+    display: none;
+  }
+  .recent__new {
+    margin: 20px 0;
+  }
+  .recent__subtitle {
+    font-weight: 500;
+    font-size: 16px;
+  }
+  .recent__description {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .recent__title {
+    font-weight: 500;
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+}
+
 .discuss {
   background: url(../assents/img/global__img/image.png) center center no-repeat;
   height: auto;
