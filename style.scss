@@ -6,14 +6,17 @@
 @import "./assents/additionalls/core";
 @import "./assents/additionalls/classec";
 
-// PAGES star
 @import "./assents/components/header";
+
+// PAGES star
 @import "./assents/components/hero";
+@import "./assents/components/video";
+@import "./assents/components/recent";
+
 // PAGES end
 
-
-
-
+@import "./assents/components/discuss";
+@import "./assents/components/footer";
 
 // MEDIA star
 @import "./assents/media/media_base";

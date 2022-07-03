@@ -18,6 +18,39 @@
         }
     }
 }
+@media screen and (max-width:1090px) {
+    .footer {
+        &__top {
+            flex-wrap: wrap;
+        }
+        &__title {
+            margin-top: 15px;
+        }
+    }
+}
+@media screen and (max-width:1060px) {
+    .footer {
+       &__middle {
+        flex-wrap: wrap;
+        margin-top: 33px;
+
+       }
+       &__subtitle {
+        margin-top: 30px;
+       }
+       &__up {
+        align-items: center;
+       }
+    }
+}
+@media screen and (max-width:810px) {
+    .discuss {
+        background: $litegray;
+        &__wrapper {
+            justify-content: center;
+        }
+    }
+}
 @media screen and (max-width:780px) {
     .header {
         &__nav {
@@ -61,6 +94,44 @@
     }
    
 }
+@media screen and (max-width:571px) {
+    .footer {
+        padding: 60px 0;
+      &__btn,
+      &__input {
+        border-radius: 4px;
+      }
+      &__btn {
+        margin-top: 20px;
+      }
+      &__text,
+      &__description {
+        max-width: 340px;
+      }
+      &__bottom {
+        flex-wrap: wrap-reverse;
+      }
+      &__righta {
+        margin-right: 130px;
+        margin-top: 30px;
+     }
+    }
+}
+@media screen and (max-width:640px) {
+    .discuss {
+        &__title {
+            font-weight: 500;
+            font-size: 20px;
+        }
+        &__inner {
+            padding-right: 40px;
+        }
+        &__input,
+        &__input--another {
+            width: 100%;
+        }
+    }
+}
 @media screen and (max-width:500px) {
     .burger {
         &__list {
@@ -70,5 +141,73 @@
         &__mail {
             font-size: 10px;
         }
+    }
+}
+@media screen and (max-width:450px) {
+    .footer {
+        text-align: center;
+        &__content {
+          flex-wrap: wrap;
+        }
+        &__links {
+          display: flex;
+          // margin-top: 20px;
+        }
+        &__link {
+          margin-right: 12px;
+        }
+        &__none {
+            display: none;
+        }   
+        
+        &__inner {
+            flex-wrap: wrap;
+        }
+        &__btn {
+            padding: 10px 15px;
+            border-radius: 4px;
+            margin:20px auto 0;
+        }
+        &__input {
+            padding: 10px;
+            border-radius: 4px;
+            width: 275px;
+        }
+        &__over {
+            margin: 0 auto;
+           width: 400px;
+        }
+        &__righta {
+            margin: 20px auto 0;
+        }
+        &__up {
+            margin: 0 auto;
+        }
+        &__links {
+            margin: 20px auto;
+        }
+    }
+}
+@media screen and (max-width:404px) {
+    .footer {
+       &__logo {
+        margin: 0 auto;
+       }
+       &__input {
+        width: 200px;
+       }
+    }
+}
+
+@media screen and (max-width:400px) {
+    .discuss {
+        
+       &__content {
+        padding: 20px;
+       }
+       &__description {
+        max-width: 223px;
+
+       }
     }
 }

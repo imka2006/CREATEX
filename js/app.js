@@ -1,12 +1,14 @@
 const burger__menu = document.querySelector(".burger__menu")
 const body = document.querySelector("body") 
 const burger__delete = document.querySelector(".burger__delete")
+const box = document.querySelector(".footer__box")
+const text = document.querySelector(".footer__inscription")
+const discuss__checkbox = document.querySelector(".discuss__checkbox__wrapper")
 
 
-console.log(burger__menu.classList);
 burger__menu.addEventListener("click", () => {
     burger__menu.classList.toggle("active")
-
+    body.style.overflow = 'hidden'
     if (burger__menu.classList.contains("active")) {
         body.style.overflow = 'hidden'
     } else {
@@ -40,3 +42,22 @@ const hero__swiper = new Swiper(".hero__swiper", {
       },
     spaceBetween: 0,
   });
+
+  discuss__checkbox.addEventListener("click", () => {
+    discuss__checkbox.classList.toggle("befor__after")
+  })
+
+box.addEventListener("click", () => {
+  window.scrollTo({
+    top:0,
+    behavior:'smooth'
+  });
+});
+text.addEventListener("click", () => {
+  window.scrollTo({
+    top:0,
+    behavior:'smooth'
+  });
+});
+
+

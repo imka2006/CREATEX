@@ -13,3 +13,10 @@
     max-height: $heigth;
     background: $bg;
 }
+@mixin flex($align, $justify, $wrap) {
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+    flex-wrap: $wrap;
+    
+}
