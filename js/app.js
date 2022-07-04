@@ -43,6 +43,29 @@ const hero__swiper = new Swiper(".hero__swiper", {
     spaceBetween: 0,
   });
 
+  const brouse__swiper = new Swiper(".brouse__swiper", {
+    slidesPerView: 2,
+    loop: true, 
+    navigation: {
+      nextEl: ".brouse__next",
+      prevEl: ".brouse__prev",
+    },
+    spaceBetween: 30, 
+    breakpoints: {
+        300: {
+            slidesPerView: 1,
+        },
+        840: {
+            slidesPerView: 2,
+        },
+
+        1240: {
+            slidesPerView: 3,
+        },
+    },
+});
+
+
   discuss__checkbox.addEventListener("click", () => {
     discuss__checkbox.classList.toggle("befor__after")
   })
