@@ -110,7 +110,6 @@
     &__close {
         display: none;
         z-index: 5;
-        margin-right: 15px;
     }
     &__menu {
         @include box (30px ,18px, rgba(0, 0, 0, -1));

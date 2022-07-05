@@ -1,5 +1,5 @@
 .recent {
-    margin-bottom: 900px;
+    margin-bottom: 125px;
     &__title  {
         @include font (700, 46px, $grayblack);
         text-align: center;
@@ -9,9 +9,6 @@
         display: flex;
         justify-content: space-between;
     }
-    // &__img {
-    //     max-width: 100%;
-    // }
     &__wrapper {
         box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.16), 0px 30px 24px -10px rgba(154, 156, 165, 0.1), 0px 12px 10px -6px rgba(154, 156, 165, 0.08), 0px 4px 4px -4px rgba(30, 33, 44, 0.05);
         border-radius: 4px;
@@ -63,6 +60,21 @@
         max-width: 657px;
         line-height: 26px;
     }
+    &__value {
+        margin: 80px auto 0;
+        max-width: 604px;
+        gap: 40px;
+        justify-content: center;
+    }
+    &__pointer {
+        @include font (700, 28px, $grayblack);
+    }
+    &__btn {
+        @include font (700, 16px, $white);
+        padding: 20px 40px;
+        background: $primary;
+        border-radius: 4px;
+    }
 }
 @media screen and (max-width:1250px) {
     .recent {
@@ -104,6 +116,7 @@
 }
 @media screen and (max-width:745px) {
     .recent {
+        margin-bottom: 50px;
         &__content {
             justify-content: unset;
             display: unset;
@@ -116,6 +129,18 @@
         }
         &__img  {
             width: 100%;
+        }
+        &__pointer {
+            font-weight: 500;
+            font-size: 20px;
+        }
+        &__btn {
+            font-weight: 500;
+            padding: 10px 20px;
+        }
+        &__value  {
+            flex-wrap: wrap;
+            max-width: 245px;
         }
     }
   
