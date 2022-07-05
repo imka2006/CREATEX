@@ -11,11 +11,11 @@ burger__menu.addEventListener("click", () => {
     burger__menu.classList.toggle("active")
     body.style.overflow = 'hidden'
     if (burger__menu.classList.contains("active")) {
-        body.style.overflow = 'hidden'
-        // body.style.padding = '0 17px 0 0px'
+      body.style.overflow = "hiden"
+      body.style.padding = "0 13px 0 0"
     } else {
         body.style.overflow = 'unset'
-        // body.style.padding = 'unset'
+        body.style.padding = "unset"
     }
 })
 burger__delete.addEventListener("click", () => {
