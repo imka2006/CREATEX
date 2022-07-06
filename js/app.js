@@ -12,10 +12,10 @@ burger__menu.addEventListener("click", () => {
     body.style.overflow = 'hidden'
     if (burger__menu.classList.contains("active")) {
       body.style.overflow = "hiden"
-      body.style.padding = "0 13px 0 0"
+      // body.style.padding = "0 20px 0 0px"  
     } else {
         body.style.overflow = 'unset'
-        body.style.padding = "unset"
+        // body.style.padding = "unset" 
     }
 })
 burger__delete.addEventListener("click", () => {
@@ -68,6 +68,21 @@ const hero__swiper = new Swiper(".hero__swiper", {
     },
 });
 
+const partners__swiper = new Swiper('.partners__swiper', {
+  loop: true,
+  slidesPerView: 1,
+  navigation: {
+    nextEl: '.partners--next',
+    prevEl: '.partners--prev',
+  },
+  spaceBetween: 30, 
+  breakpoints: {
+      300: {
+          slidesPerView: 1,
+      },
+  },
+
+});
 
   discuss__checkbox.addEventListener("click", () => {
     discuss__checkbox.classList.toggle("befor__after")

@@ -2,7 +2,7 @@
     padding: 20px 0;
     &__logo {
         @include font (700, 28px, $grayblack);
-        z-index: 2;
+        z-index: 12;
     }
     &__nav {
         display: flex;
@@ -57,7 +57,7 @@
         opacity: 0.8;
         background:rgba(0, 0, 0, 0.5);
         display: none;
-        z-index: 1;
+        z-index: 11;
     }
     &__list {
         display: none;
@@ -70,7 +70,7 @@
         background: black;
         transition: 999ms;
         border-top-left-radius: 20px;
-        z-index: 3;
+        z-index: 12;
     }
     &__nav {
         display: none;
@@ -109,7 +109,7 @@
     }
     &__close {
         display: none;
-        z-index: 5;
+        z-index: 13;
     }
     &__menu {
         @include box (30px ,18px, rgba(0, 0, 0, -1));

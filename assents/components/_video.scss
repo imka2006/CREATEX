@@ -5,10 +5,12 @@
     }
     &__title {
         @include font (700, 46px, $grayblack);
+        text-align: center;
     }
     &__description {
         @include font (400, 18px, $litegray);
-        margin: 24px 0 60px
+        margin: 24px 0 60px;
+        text-align: center;
     }
     &__display {
         max-width: 100%;
