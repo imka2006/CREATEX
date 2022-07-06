@@ -1,0 +1,54 @@
+.Available {
+
+    &__bagr {
+        background: #F4F5F7;
+    }
+
+    &__home {
+        padding: 90px 0;
+    }
+
+    &__left {
+        display: flex;
+    }
+
+    &__title {
+        margin-top: 40px;
+        font-weight: 700;
+        font-size: 72px;
+    }
+
+    &__suptitle {
+        margin-top: 24px;
+        font-weight: 400;
+        font-size: 20px;
+        color: #787A80;
+        width: 500px;
+    }
+
+    &__men {
+        max-width: 100%;
+        margin-left: 60px;
+    }
+
+    &__positions {
+        color: #424551;
+    }
+
+    &__positions:hover {
+        color: #9A9CA5;
+        transition: 0.9;
+    }
+
+    &__position{
+        color: #9A9CA5; ;
+    }
+
+    &__line{
+        color: #9A9CA5;
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+
+
+}

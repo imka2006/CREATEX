@@ -537,6 +537,47 @@ button {
   max-width: 100%;
 }
 
+.Available__bagr {
+  background: #F4F5F7;
+}
+.Available__home {
+  padding: 90px 0;
+}
+.Available__left {
+  display: flex;
+}
+.Available__title {
+  margin-top: 40px;
+  font-weight: 700;
+  font-size: 72px;
+}
+.Available__suptitle {
+  margin-top: 24px;
+  font-weight: 400;
+  font-size: 20px;
+  color: #787A80;
+  width: 500px;
+}
+.Available__men {
+  max-width: 100%;
+  margin-left: 60px;
+}
+.Available__positions {
+  color: #424551;
+}
+.Available__positions:hover {
+  color: #9A9CA5;
+  transition: 0.9;
+}
+.Available__position {
+  color: #9A9CA5;
+}
+.Available__line {
+  color: #9A9CA5;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
 @media screen and (max-width: 1385px) {
   .construction__jpg {
     margin-left: 100px;
