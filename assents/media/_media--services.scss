@@ -18,6 +18,19 @@
         &__jpg {
             margin-left: 30px;
         }
+
+        &__fonm {
+            max-width: 100%;
+            max-height: 500px;
+        }
+
+        &__all {
+            margin-top: 70px;
+        }
+
+        &__about {
+            margin-top: 30px;
+        }
     }
 
 }
@@ -26,6 +39,11 @@
     .construction {
         &__jpg {
             margin-left: 10px;
+        }
+
+        &__fone {
+            max-width: 100%;
+            height: 350px;
         }
     }
 }
@@ -40,13 +58,13 @@
             padding: 0;
             border: 3px solid #FF5A30;
             border-radius: 6px;
-            padding: 30px 40px;
+            padding: 30px 30px;
             max-width: 100%;
         }
 
         &__jpg {
             margin-left: 2px;
-            margin-top: 20px;
+            // margin-top: 20px;
             // max-width: 0;
         }
 
@@ -55,13 +73,42 @@
             flex-direction: column-reverse;
             border: 3px solid #FF5A30;
             border-radius: 4px;
-            padding: 20px 60px;
+            padding: 20px 30px;
             max-width: 100%;
         }
 
+        &__fet {
+            margin-top: 50px;
+            margin-left: 0;
+        }
 
+        &__boot {
+            margin-top: 50px;
+        }
 
+        &__fonm {
+            max-width: 100%;
+            max-height: 450px;
+        }
+    }
+}
 
+@media screen and (max-width:900px) {
+    .construction {
+        &__servis {
+            font-weight: 700;
+            font-size: 40px;
+        }
+
+        &__services {
+            font-weight: 300;
+            font-size: 15px;
+        }
+
+        &__aboass {
+            max-width: 350px;
+            font-size: 15px;
+        }
     }
 }
 
@@ -70,5 +117,122 @@
         &__one {
             font-weight: 700;
         }
+    }
+}
+
+@media screen and(max-width:767px) {
+    .construction {
+
+        &__all {
+            padding: 0;
+            border: 4px solid #FF5A30;
+            border-radius: 6px;
+            padding: 20px 20px;
+            max-width: 100%;
+        }
+
+        &__one {
+            font-weight: 400;
+            font-size: 23px;
+        }
+
+        &__servis {
+            font-weight: 800;
+            font-size: 28px;
+            margin-top: 25px;
+        }
+
+        &__services {
+            font-weight: 200;
+            font-size: 14px;
+        }
+
+        &__titp {
+            margin-top: 10px;
+            font-weight: 200;
+            font-size: 14px;
+        }
+
+        &__development {
+            padding: 0;
+            border: 4px solid #FF5A30;
+            border-radius: 5px;
+            padding: 20px 20px;
+            max-width: 100%;
+        }
+
+        &__more {
+            padding: 10px 20px;
+            margin-top: 20px;
+        }
+
+    }
+}
+
+
+@media screen and(max-width:500px) {
+    .construction {
+        &__boot {
+            padding: 15px 15px;
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        &__fet {
+            padding: 15px 15px;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        &__one {
+            font-weight: 700;
+            font-size: 20px;
+        }
+
+        &__more {
+            padding: 8px 15px;
+        }
+
+    }
+
+}
+
+@media screen and (max-width:380px) {
+    .construction {
+
+        &__development,
+        &__all {
+            padding: 7px 10px;
+            border: 1.8px solid #FF5A30;
+            margin-top: 25px;
+        }
+
+        &__all,
+        &__inter {
+            margin-top: 15px;
+        }
+
+        &__boot,
+        &__titp {
+            font-size: 11px;
+        }
+
+        &__more {
+            font-size: 12px;
+        }
+
+        &__servis {
+            font-weight: 700;
+            font-size: 30px;
+        }
+
+        &__aboass {
+            font-size: 13px;
+        }
+
+        &__services {
+            font-size: 12px;
+        }
+
     }
 }
